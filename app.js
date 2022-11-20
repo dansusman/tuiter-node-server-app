@@ -9,6 +9,7 @@ import UserController from "./controllers/users/users-controller.js";
 
 const CONNECTION_STRING =
     process.env.DB_CONNECTION_STRING || "mongodb://localhost:27017/tuiter";
+console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors());
